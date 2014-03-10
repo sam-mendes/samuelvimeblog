@@ -2,7 +2,7 @@ from fabric.api import *
 from fabric.contrib.console import confirm
 
 env.hosts = ["ubuntu@blog.samuelvime.com.br"]
-env.key_filename = "/home/samuel/Dropbox/amazon/ssh/samuelvime.pem"
+env.key_filename = "/home/samuel/Dropbox/amazon/ssh/aws-samuelvime.pem"
 
 def prepare_deploy():
     local("git add -A && git commit")
